@@ -53,9 +53,12 @@ if (localStorage.getItem("favourites") == null) {
 }
 
 // function for show heros full details in a new page
+
+let html_hero = "";
 function showDetails(idnumber) {
   localStorage.setItem("id", idnumber);
-}
+  window.location.href = "./superheros.html";
+  }
 
 // function for adding id value in local storage favourites key if not available this id
 function addFavourite(id) {

@@ -1,3 +1,7 @@
+body{
+    background-color: #800000;
+    /* background-image: url("./src/marvel.jpg"); */
+}
 .card-details{
     color: blue;
     display: flex;
