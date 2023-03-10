@@ -30,7 +30,7 @@ function fetchData() {
       .then((data) => {
         html +=
           `
-            <div class="col-4" style = "margin-top = 50px;">
+            <div class="col-lg-4 col-md-6 col-12" style = "margin-top = 50px;">
                 <div class="card m-5" style="width: 18rem; height: 28rem;">
                     <img class="card-img-top" onclick="showDetails(${arr[i]})" src="${data.image.url}" style="height: 25rem;">
                     <div class="card-body">

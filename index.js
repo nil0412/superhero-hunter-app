@@ -19,7 +19,7 @@ const showCorrespondingHeros = () => {
       responseJSON.results.forEach((element) => {
         html +=
           `
-            <div class="col-4" style = "margin-top = 50px;">
+            <div class="col-lg-4 col-md-6 col-12" style = "margin-top = 50px;">
                 <div class="card m-5" style="width: 18rem; height: 28rem;">
                     <img class="card-img-top" onclick="showDetails(${element.id})" src="${element.image.url}" style="height: 25rem;">
                     <div class="card-body">
@@ -33,7 +33,7 @@ const showCorrespondingHeros = () => {
         // console.log(responseJSON.results.length);
       });
     }
-    document.getElementById("cards-group").innerHTML = html;
+    document.getElementById("card-deck").innerHTML = html;
   };
 
   xhr.open(

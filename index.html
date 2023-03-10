@@ -10,13 +10,13 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-danger" data-bs-theme="dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Superhero Hunter</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
               <a class="nav-link" href="./superheros.html">Superheros</a>
@@ -28,16 +28,17 @@
 
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
-          <form class="d-flex px-5 py-5" role="search">
+          <form class="d-flex p-5" role="search">
             <input class="form-control me-2" id="name" type="search" onkeyup="showCorrespondingHeros()" placeholder="Search for Superheros like Spider-Man, Iron-Man, Hulk etc..." aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <button class="btn btn-success" type="submit">Search</button>
           </form>
-          <div id="cards-group"></div>
+          <div id="card-deck"></div>
         </div>
       </div>
         
         
-      <div class="container" id="contentContainer">
+      <div class="container d-flex justify-content-center" id="contentContainer">
+        <h1 class="text-warning">Search for your favorite marvel Superhero</h1>
         <div class="d-flex align-items-center" id="characterSpinnerSection"></div>
         <div class="d-flex align-items-center" id="comicsSpinnerSection"></div>
         <section id="characterSection"></section>
