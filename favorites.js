@@ -1,13 +1,6 @@
 // get favourites heros id from local storage and store in an array
 // stores the charcter id
 var arr = JSON.parse(localStorage.getItem("favourites"));
-console.log(arr);
-
-// // function for show heros full details in a new page
-// function showDetails(idnumber) {
-//     localStorage.setItem("id", idnumber);
-//     window.location = "index2.html";
-// }
 
 // function for remove hero from favourites, update localstorage and reload page
 function removeHero(id) {
@@ -35,13 +28,13 @@ function fetchData() {
                     <img class="card-img-top" onclick="showDetails(${arr[i]})" src="${data.image.url}" style="height: 25rem;">
                     <div class="card-body">
                     <span class="card-details"> 
-                        <span><h5 class="card-title" onclick="showDetails(${arr[i]})">${data.name}</h5></span>` +
-          `<span><h5><i id="${arr[i]}" class="fa-solid fa-circle-minus" onclick="removeHero(${arr[i]})" style:"align-items: right; cursor: pointer;"></i></h5></span>
+                        <span><h5 class="card-title" onclick="showDetails(${arr[i]})">${data.name}</h5></span>
+                        <span><h5><i id="${arr[i]}" class="fa-solid fa-circle-minus" onclick="removeHero(${arr[i]})" style:"align-items: right; cursor: pointer;"></i></h5></span>
                     </span>
                 </div>
             </div>
             </div>
-             `;
+          `;
       });
   }
 }
